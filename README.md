@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="ss01.jpeg" alt="Project Banner" width="70%">
+    <img src="Resource/ss01.jpeg" alt="Project Banner" width="70%">
 </div>
   
 <div align="center">
@@ -9,7 +9,7 @@
 ## Project Overview
 
 HealthCare Plus is a comprehensive Healthcare Management System designed to streamline and enhance healthcare services. This project aims to bring innovation and technology to healthcare, ensuring the highest standards of patient care and comfort.
-<img src="ss04.png" alt="Project Banner" align="center">
+<img src="Resource/ss04.png" alt="Project Banner" align="center">
 
 The system offers the following features:
 
@@ -18,7 +18,7 @@ The system offers the following features:
 - Active involvement in medical research for cutting-edge healthcare.
 - Community engagement through health education programs and medical camps.
 
-<img src="sc03.png" alt="Project Banner">
+<img src="Resource/sc03.png" alt="Project Banner">
 
 ## Key Features
 
@@ -37,8 +37,8 @@ The system offers the following features:
 - Chart libraries for visualizing data.
 - PDF generation for creating bills and invoices.
   
-<img src="ss05.png" alt="Project Banner">
-<img src="ss02.png" alt="Project Banner">
+<img src="Resource/ss05.png" alt="Project Banner">
+<img src="Resource/ss02.png" alt="Project Banner">
 
 ## Installation
 
