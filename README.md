@@ -6,9 +6,6 @@
     <h1>HealthCare Plus - Healthcare Management System</h1>
 </div>
 
-<p align="center"><b>[In Progress...]</b></p>
-
-
 ## Project Overview
 
 HealthCare Plus is a comprehensive Healthcare Management System designed to streamline and enhance healthcare services. This project aims to bring innovation and technology to healthcare, ensuring the highest standards of patient care and comfort.
