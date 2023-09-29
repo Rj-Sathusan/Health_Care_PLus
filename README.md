@@ -1,6 +1,6 @@
 # Health_Care_PLus
 <div align="center">
-    <img src="Your-Project-Logo.png" alt="Project Banner" width="40%">
+    <img src="ss01.jpeg" alt="Project Banner" width="70%">
 </div>
   
 <div align="center">
@@ -9,7 +9,7 @@
 
 <p align="center"><b>[In Progress...]</b></p>
 
-<img src="Resources/Readme1.png" alt="Project Banner">
+<img src="ss04.png" alt="Project Banner">
 
 ## Project Overview
 
@@ -22,7 +22,7 @@ The system offers the following features:
 - Active involvement in medical research for cutting-edge healthcare.
 - Community engagement through health education programs and medical camps.
 
-<img src="Resources/Readme2.png" alt="Project Banner">
+<img src="sc03.png" alt="Project Banner">
 
 ## Key Features
 
@@ -40,6 +40,9 @@ The system offers the following features:
 - Krypton UI for improved user interface.
 - Chart libraries for visualizing data.
 - PDF generation for creating bills and invoices.
+  
+<img src="ss05.png" alt="Project Banner">
+<img src="ss02.png" alt="Project Banner">
 
 ## Installation
 
