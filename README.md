@@ -1,34 +1,49 @@
 # Health_Care_PLus
-Open the project in Visual Studio.
+<div align="center">
+    <img src="Your-Project-Logo.png" alt="Project Banner" width="40%">
+</div>
+  
+<div align="center">
+    <h1>HealthCare Plus - Healthcare Management System</h1>
+</div>
 
-Build and run the application.
+<p align="center"><b>[In Progress...]</b></p>
 
-Usage
-Log in as an administrator using your credentials.
+<img src="Resources/Readme1.png" alt="Project Banner">
 
-Navigate through the admin menu to manage rooms, patients, payments, and more.
+## Project Overview
 
-View today's total income through interactive charts.
+HealthCare Plus is a comprehensive Healthcare Management System designed to streamline and enhance healthcare services. This project aims to bring innovation and technology to healthcare, ensuring the highest standards of patient care and comfort.
 
-Create appointments for patients, add resources, and make payments seamlessly.
+The system offers the following features:
 
-Generate and print bills with just a click.
+- Patient-centric approach for personalized care.
+- Compassionate and highly skilled staff.
+- Active involvement in medical research for cutting-edge healthcare.
+- Community engagement through health education programs and medical camps.
 
-Project Objectives
-Develop an efficient healthcare management system.
-Enhance patient care through technology.
-Improve accessibility and user experience.
-Support healthcare professionals in their daily tasks.
-Foster innovation and inclusivity in healthcare.
-Motivation
-HealthCare Plus is motivated by the desire to revolutionize healthcare management, making it more efficient, accessible, and patient-centered. The project aims to bridge the gap between traditional healthcare practices and modern technology, ensuring the best possible care for patients.
+<img src="Resources/Readme2.png" alt="Project Banner">
 
-Future Development
-Continuously add new features to improve healthcare services.
-Enhance the user interface and user experience.
-Optimize performance and security.
-Contributing
-Contributions are welcome! Please read the Contributing Guidelines before submitting a pull request.
+## Key Features
 
-License
-This project is licensed under the MIT License. See the LICENSE file for more information.
+- Streamlined appointment scheduling and management.
+- Efficient management of electronic medical records (EMRs).
+- Comprehensive database of doctor information, medical resources, and medication schedules.
+- Real-time tracking of room and theater availability.
+- Accurate billing and invoice generation.
+- Customized reports for informed decision-making.
+
+## Technologies Used
+
+- C# and Visual Studio for application development.
+- MySQL for database management.
+- Krypton UI for improved user interface.
+- Chart libraries for visualizing data.
+- PDF generation for creating bills and invoices.
+
+## Installation
+
+1. Clone the repository:
+
+   ```sh
+   git clone https://github.com/YourUsername/HealthCarePlus.git
