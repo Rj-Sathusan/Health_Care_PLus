@@ -1,4 +1,3 @@
-# Health_Care_PLus
 <div align="center">
     <img src="ss01.jpeg" alt="Project Banner" width="70%">
 </div>
@@ -9,11 +8,11 @@
 
 <p align="center"><b>[In Progress...]</b></p>
 
-<img src="ss04.png" alt="Project Banner">
 
 ## Project Overview
 
 HealthCare Plus is a comprehensive Healthcare Management System designed to streamline and enhance healthcare services. This project aims to bring innovation and technology to healthcare, ensuring the highest standards of patient care and comfort.
+<img src="ss04.png" alt="Project Banner" align="center">
 
 The system offers the following features:
 
