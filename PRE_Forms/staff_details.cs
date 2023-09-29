@@ -12,15 +12,6 @@ namespace Health_Care
         public staff_details(string role=null)
         {
             InitializeComponent();
-            if (role != "admin")
-            {
-                save_btn.Enabled = false;
-                delete_btn.Enabled = false;
-                grid_view.Enabled = false;
-              //  grid_view_CellMouseDoubleClick.enabeled = false;
-            }
-
-
             BindStaffDetails();
         }
 

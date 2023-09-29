@@ -116,7 +116,6 @@ namespace Health_Care
         {
             try
             {
-
                 //  BE_Classes.patient_details room = new BE_Classes.patient_details();
                 this.room_com.DataSource = appointment_details.combo_room();
                 this.room_com.ValueMember = "RoomID";
@@ -125,7 +124,6 @@ namespace Health_Care
                 this.resource_com.DataSource = appointment_details.combo_roesource();
                 this.resource_com.ValueMember = "ResourceID";
                 this.resource_com.DisplayMember = "ResourceType";
-
 
             }
             catch

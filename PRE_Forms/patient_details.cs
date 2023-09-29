@@ -48,7 +48,7 @@ namespace Health_Care
         }
         private void search_box_TextChanged(object sender, EventArgs e)
         {
-            p_details.BindPatientDetailsSearch(grid_view, search_box.Text);
+            dalFunction.SearchGridView(grid_view, search_box.Text);
 
         }
 

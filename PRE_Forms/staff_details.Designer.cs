@@ -1,6 +1,6 @@
 ﻿namespace Health_Care
 {
-    partial class medicalrecords
+    partial class staff_details
     {
         /// <summary>
         /// Required designer variable.
@@ -32,38 +32,28 @@
             this.kryptonPalette1 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
             this.label2 = new System.Windows.Forms.Label();
             this.grid_view = new System.Windows.Forms.DataGridView();
-            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Diagnosis = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Prescription = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.LabResults = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.diagnosis_txt = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.name_txt = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.prescription_txt = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.role_txt = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.clear_btn = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.delete_btn = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.save_btn = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.search_box = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.grid_view2 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nic = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.kryptonTextBox1 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.username_txt = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.password_txt = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.labResults_txt = new System.Windows.Forms.ComboBox();
-            this.name_txt = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.patientID_txt = new System.Windows.Forms.Label();
+            this.task_txt = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.UserName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Password = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Role = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Task = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.grid_view)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.grid_view2)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonPalette1
@@ -184,8 +174,6 @@
             // 
             // grid_view
             // 
-            this.grid_view.AllowUserToAddRows = false;
-            this.grid_view.AllowUserToDeleteRows = false;
             this.grid_view.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -193,82 +181,37 @@
             this.grid_view.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grid_view.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.id,
-            this.PID,
             this.Name,
-            this.Diagnosis,
-            this.Prescription,
-            this.LabResults});
+            this.UserName,
+            this.Password,
+            this.Role,
+            this.Task});
             this.grid_view.GridColor = System.Drawing.Color.DeepSkyBlue;
-            this.grid_view.Location = new System.Drawing.Point(0, 454);
+            this.grid_view.Location = new System.Drawing.Point(3, 391);
             this.grid_view.Name = "grid_view";
-            this.grid_view.ReadOnly = true;
             this.grid_view.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grid_view.Size = new System.Drawing.Size(968, 324);
+            this.grid_view.Size = new System.Drawing.Size(805, 244);
             this.grid_view.TabIndex = 8;
             this.grid_view.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.grid_view_CellMouseDoubleClick);
             // 
-            // id
+            // name_txt
             // 
-            this.id.HeaderText = "id";
-            this.id.Name = "id";
-            this.id.ReadOnly = true;
-            this.id.Visible = false;
-            // 
-            // PID
-            // 
-            this.PID.HeaderText = "PID";
-            this.PID.Name = "PID";
-            this.PID.ReadOnly = true;
-            this.PID.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.PID.Visible = false;
-            // 
-            // Name
-            // 
-            this.Name.HeaderText = "Name";
-            this.Name.Name = "Name";
-            this.Name.ReadOnly = true;
-            // 
-            // Diagnosis
-            // 
-            this.Diagnosis.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.Diagnosis.HeaderText = "Diagnosis";
-            this.Diagnosis.Name = "Diagnosis";
-            this.Diagnosis.ReadOnly = true;
-            this.Diagnosis.Width = 98;
-            // 
-            // Prescription
-            // 
-            this.Prescription.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Prescription.HeaderText = "Prescription";
-            this.Prescription.Name = "Prescription";
-            this.Prescription.ReadOnly = true;
-            // 
-            // LabResults
-            // 
-            this.LabResults.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.LabResults.HeaderText = "LabResults";
-            this.LabResults.Name = "LabResults";
-            this.LabResults.ReadOnly = true;
-            this.LabResults.Width = 106;
-            // 
-            // diagnosis_txt
-            // 
-            this.diagnosis_txt.Location = new System.Drawing.Point(15, 89);
-            this.diagnosis_txt.Name = "diagnosis_txt";
-            this.diagnosis_txt.Size = new System.Drawing.Size(301, 31);
-            this.diagnosis_txt.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.diagnosis_txt.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.diagnosis_txt.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.diagnosis_txt.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.name_txt.Location = new System.Drawing.Point(15, 89);
+            this.name_txt.Name = "name_txt";
+            this.name_txt.Size = new System.Drawing.Size(301, 31);
+            this.name_txt.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.name_txt.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.name_txt.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.name_txt.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.diagnosis_txt.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.diagnosis_txt.StateCommon.Border.Rounding = 20;
-            this.diagnosis_txt.StateCommon.Border.Width = 1;
-            this.diagnosis_txt.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
-            this.diagnosis_txt.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.diagnosis_txt.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.diagnosis_txt.TabIndex = 9;
+            this.name_txt.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.name_txt.StateCommon.Border.Rounding = 20;
+            this.name_txt.StateCommon.Border.Width = 1;
+            this.name_txt.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
+            this.name_txt.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.name_txt.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.name_txt.TabIndex = 9;
             // 
             // label3
             // 
@@ -277,45 +220,44 @@
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label3.Location = new System.Drawing.Point(13, 61);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(70, 17);
+            this.label3.Size = new System.Drawing.Size(45, 17);
             this.label3.TabIndex = 10;
             this.label3.Tag = "Name";
-            this.label3.Text = "Diagnosis";
+            this.label3.Text = "Name";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label5.Location = new System.Drawing.Point(14, 227);
+            this.label5.Location = new System.Drawing.Point(382, 61);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(83, 17);
+            this.label5.Size = new System.Drawing.Size(37, 17);
             this.label5.TabIndex = 10;
-            this.label5.Text = "Prescription";
+            this.label5.Text = "Role";
             // 
-            // prescription_txt
+            // role_txt
             // 
-            this.prescription_txt.Location = new System.Drawing.Point(16, 253);
-            this.prescription_txt.Multiline = true;
-            this.prescription_txt.Name = "prescription_txt";
-            this.prescription_txt.Size = new System.Drawing.Size(301, 108);
-            this.prescription_txt.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.prescription_txt.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.prescription_txt.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.prescription_txt.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.role_txt.Location = new System.Drawing.Point(384, 89);
+            this.role_txt.Name = "role_txt";
+            this.role_txt.Size = new System.Drawing.Size(301, 31);
+            this.role_txt.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.role_txt.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.role_txt.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.role_txt.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.prescription_txt.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.prescription_txt.StateCommon.Border.Rounding = 20;
-            this.prescription_txt.StateCommon.Border.Width = 1;
-            this.prescription_txt.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
-            this.prescription_txt.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.prescription_txt.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.prescription_txt.TabIndex = 9;
+            this.role_txt.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.role_txt.StateCommon.Border.Rounding = 20;
+            this.role_txt.StateCommon.Border.Width = 1;
+            this.role_txt.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
+            this.role_txt.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.role_txt.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.role_txt.TabIndex = 9;
             // 
             // clear_btn
             // 
-            this.clear_btn.Location = new System.Drawing.Point(718, 402);
+            this.clear_btn.Location = new System.Drawing.Point(666, 333);
             this.clear_btn.Name = "clear_btn";
             this.clear_btn.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.clear_btn.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
@@ -375,7 +317,7 @@
             // 
             // delete_btn
             // 
-            this.delete_btn.Location = new System.Drawing.Point(570, 402);
+            this.delete_btn.Location = new System.Drawing.Point(518, 333);
             this.delete_btn.Name = "delete_btn";
             this.delete_btn.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
             this.delete_btn.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
@@ -435,7 +377,7 @@
             // 
             // save_btn
             // 
-            this.save_btn.Location = new System.Drawing.Point(415, 402);
+            this.save_btn.Location = new System.Drawing.Point(363, 333);
             this.save_btn.Name = "save_btn";
             this.save_btn.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
             this.save_btn.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
@@ -495,9 +437,9 @@
             // 
             // search_box
             // 
-            this.search_box.Location = new System.Drawing.Point(16, 414);
+            this.search_box.Location = new System.Drawing.Point(19, 345);
             this.search_box.Name = "search_box";
-            this.search_box.Size = new System.Drawing.Size(340, 31);
+            this.search_box.Size = new System.Drawing.Size(218, 31);
             this.search_box.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.search_box.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.search_box.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -518,7 +460,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label4.Location = new System.Drawing.Point(10, 391);
+            this.label4.Location = new System.Drawing.Point(13, 322);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(53, 17);
             this.label4.TabIndex = 31;
@@ -531,179 +473,143 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label1.Location = new System.Drawing.Point(13, 146);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(83, 17);
+            this.label1.Size = new System.Drawing.Size(75, 17);
             this.label1.TabIndex = 10;
-            this.label1.Text = "Lab Results";
+            this.label1.Text = "UserName";
             // 
-            // grid_view2
+            // username_txt
             // 
-            this.grid_view2.BackgroundColor = System.Drawing.Color.White;
-            this.grid_view2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.grid_view2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grid_view2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Nic});
-            this.grid_view2.GridColor = System.Drawing.Color.DeepSkyBlue;
-            this.grid_view2.Location = new System.Drawing.Point(360, 123);
-            this.grid_view2.Name = "grid_view2";
-            this.grid_view2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grid_view2.Size = new System.Drawing.Size(570, 242);
-            this.grid_view2.TabIndex = 35;
-            this.grid_view2.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.grid_view2_CellMouseDoubleClick);
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.HeaderText = "id";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Visible = false;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Name";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Gender";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "age";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Contact";
-            this.Column4.Name = "Column4";
-            // 
-            // Nic
-            // 
-            this.Nic.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Nic.HeaderText = "Nic";
-            this.Nic.Name = "Nic";
-            // 
-            // kryptonTextBox1
-            // 
-            this.kryptonTextBox1.Location = new System.Drawing.Point(359, 86);
-            this.kryptonTextBox1.Name = "kryptonTextBox1";
-            this.kryptonTextBox1.Size = new System.Drawing.Size(226, 31);
-            this.kryptonTextBox1.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.kryptonTextBox1.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.kryptonTextBox1.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.kryptonTextBox1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.username_txt.Location = new System.Drawing.Point(15, 174);
+            this.username_txt.Name = "username_txt";
+            this.username_txt.Size = new System.Drawing.Size(301, 31);
+            this.username_txt.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.username_txt.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.username_txt.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.username_txt.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox1.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.kryptonTextBox1.StateCommon.Border.Rounding = 20;
-            this.kryptonTextBox1.StateCommon.Border.Width = 1;
-            this.kryptonTextBox1.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
-            this.kryptonTextBox1.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox1.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.kryptonTextBox1.TabIndex = 9;
-            this.kryptonTextBox1.TextChanged += new System.EventHandler(this.patientID_txt_TextChanged);
+            this.username_txt.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.username_txt.StateCommon.Border.Rounding = 20;
+            this.username_txt.StateCommon.Border.Width = 1;
+            this.username_txt.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
+            this.username_txt.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.username_txt.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.username_txt.TabIndex = 9;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label6.Location = new System.Drawing.Point(357, 61);
+            this.label6.Location = new System.Drawing.Point(382, 146);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(53, 17);
+            this.label6.Size = new System.Drawing.Size(69, 17);
             this.label6.TabIndex = 10;
-            this.label6.Tag = "Search";
-            this.label6.Text = "Search";
+            this.label6.Text = "Password";
+            // 
+            // password_txt
+            // 
+            this.password_txt.Location = new System.Drawing.Point(384, 174);
+            this.password_txt.Name = "password_txt";
+            this.password_txt.Size = new System.Drawing.Size(301, 31);
+            this.password_txt.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.password_txt.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.password_txt.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.password_txt.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.password_txt.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.password_txt.StateCommon.Border.Rounding = 20;
+            this.password_txt.StateCommon.Border.Width = 1;
+            this.password_txt.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
+            this.password_txt.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.password_txt.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.password_txt.TabIndex = 9;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label7.Location = new System.Drawing.Point(607, 65);
+            this.label7.Location = new System.Drawing.Point(14, 233);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(152, 17);
+            this.label7.Size = new System.Drawing.Size(39, 17);
             this.label7.TabIndex = 10;
-            this.label7.Tag = "Name";
-            this.label7.Text = "Selected Patient Name";
+            this.label7.Text = "Task";
             // 
-            // labResults_txt
+            // task_txt
             // 
-            this.labResults_txt.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.labResults_txt.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.labResults_txt.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.labResults_txt.FormattingEnabled = true;
-            this.labResults_txt.Items.AddRange(new object[] {
-            "Normal",
-            "Negative"});
-            this.labResults_txt.Location = new System.Drawing.Point(15, 176);
-            this.labResults_txt.Name = "labResults_txt";
-            this.labResults_txt.Size = new System.Drawing.Size(300, 28);
-            this.labResults_txt.TabIndex = 37;
+            this.task_txt.Location = new System.Drawing.Point(16, 261);
+            this.task_txt.Name = "task_txt";
+            this.task_txt.Size = new System.Drawing.Size(403, 31);
+            this.task_txt.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.task_txt.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.task_txt.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.task_txt.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.task_txt.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.task_txt.StateCommon.Border.Rounding = 20;
+            this.task_txt.StateCommon.Border.Width = 1;
+            this.task_txt.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
+            this.task_txt.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.task_txt.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.task_txt.TabIndex = 9;
             // 
-            // name_txt
+            // id
             // 
-            this.name_txt.AutoSize = true;
-            this.name_txt.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name_txt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.name_txt.Location = new System.Drawing.Point(607, 89);
-            this.name_txt.Name = "name_txt";
-            this.name_txt.Size = new System.Drawing.Size(91, 23);
-            this.name_txt.TabIndex = 10;
-            this.name_txt.Tag = "Name";
-            this.name_txt.Text = "Not Selected";
+            this.id.HeaderText = "id";
+            this.id.Name = "id";
+            this.id.Visible = false;
             // 
-            // label9
+            // Name
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label9.Location = new System.Drawing.Point(793, 65);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(128, 17);
-            this.label9.TabIndex = 10;
-            this.label9.Tag = "Name";
-            this.label9.Text = "Selected Patient ID";
+            this.Name.HeaderText = "Name";
+            this.Name.Name = "Name";
             // 
-            // patientID_txt
+            // UserName
             // 
-            this.patientID_txt.AutoSize = true;
-            this.patientID_txt.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.patientID_txt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.patientID_txt.Location = new System.Drawing.Point(793, 90);
-            this.patientID_txt.Name = "patientID_txt";
-            this.patientID_txt.Size = new System.Drawing.Size(91, 23);
-            this.patientID_txt.TabIndex = 10;
-            this.patientID_txt.Tag = "Name";
-            this.patientID_txt.Text = "Not Selected";
+            this.UserName.HeaderText = "UserName";
+            this.UserName.Name = "UserName";
+            this.UserName.Visible = false;
             // 
-            // medicalrecords
+            // Password
+            // 
+            this.Password.HeaderText = "Password";
+            this.Password.Name = "Password";
+            this.Password.Visible = false;
+            // 
+            // Role
+            // 
+            this.Role.HeaderText = "Role";
+            this.Role.Name = "Role";
+            // 
+            // Task
+            // 
+            this.Task.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Task.HeaderText = "Task";
+            this.Task.Name = "Task";
+            // 
+            // staff_details
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(956, 668);
-            this.Controls.Add(this.labResults_txt);
-            this.Controls.Add(this.grid_view2);
+            this.ClientSize = new System.Drawing.Size(802, 608);
             this.Controls.Add(this.clear_btn);
             this.Controls.Add(this.delete_btn);
             this.Controls.Add(this.save_btn);
             this.Controls.Add(this.search_box);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.prescription_txt);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.kryptonTextBox1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.diagnosis_txt);
-            this.Controls.Add(this.patientID_txt);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.name_txt);
-            this.Controls.Add(this.label7);
+            this.Controls.Add(this.password_txt);
+            this.Controls.Add(this.role_txt);
             this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.task_txt);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.username_txt);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.name_txt);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.grid_view);
             this.Controls.Add(this.label2);
@@ -715,9 +621,7 @@
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";
-            this.TopMost = true;
             ((System.ComponentModel.ISupportInitialize)(this.grid_view)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.grid_view2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -728,36 +632,27 @@
         private ComponentFactory.Krypton.Toolkit.KryptonPalette kryptonPalette1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView grid_view;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox diagnosis_txt;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox name_txt;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox prescription_txt;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox role_txt;
         private ComponentFactory.Krypton.Toolkit.KryptonButton clear_btn;
         private ComponentFactory.Krypton.Toolkit.KryptonButton delete_btn;
         private ComponentFactory.Krypton.Toolkit.KryptonButton save_btn;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox search_box;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Diagnosis;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Prescription;
-        private System.Windows.Forms.DataGridViewTextBoxColumn LabResults;
-        private System.Windows.Forms.DataGridView grid_view2;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox1;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox username_txt;
         private System.Windows.Forms.Label label6;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox password_txt;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox labResults_txt;
-        private System.Windows.Forms.Label name_txt;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label patientID_txt;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nic;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox task_txt;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn UserName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Password;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Role;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Task;
 
     }
 }

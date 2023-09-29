@@ -56,6 +56,7 @@ namespace Health_Care
             if (function_.IsLettersOnly(availability_txt, "Avilability")) return false;
             return true;
         }
+
         private bool CreateRoomAndSaveOrEditOrDelete(string actionType)
         {
             if (ValidateInput())

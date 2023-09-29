@@ -30,12 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(main_page));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.kryptonPalette1 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
             this.panel10 = new System.Windows.Forms.Panel();
             this.payment_btn = new System.Windows.Forms.Button();
@@ -66,6 +66,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.d_panel = new System.Windows.Forms.Panel();
             this.pay_panel = new System.Windows.Forms.Panel();
+            this.panel19 = new System.Windows.Forms.Panel();
+            this.appoienment = new System.Windows.Forms.Button();
             this.panel24 = new System.Windows.Forms.Panel();
             this.bill_btn = new System.Windows.Forms.Button();
             this.pay_btn = new System.Windows.Forms.Button();
@@ -82,16 +84,14 @@
             this.staff_details_btn = new System.Windows.Forms.Button();
             this.btnMedia = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
-            this.panelChildForm = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.ADD_Appoientment = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.label1 = new System.Windows.Forms.Label();
+            this.panelChildForm = new System.Windows.Forms.Panel();
             this.total_lbl = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.ADD_Appoientment = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.appoienment = new System.Windows.Forms.Button();
-            this.panel19 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.p_panel.SuspendLayout();
             this.panelSideMenu.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -99,11 +99,11 @@
             this.pay_panel.SuspendLayout();
             this.ItemPanel.SuspendLayout();
             this.panelLogo.SuspendLayout();
-            this.panelChildForm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panelChildForm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonPalette1
@@ -483,6 +483,7 @@
             this.p_panel.Name = "p_panel";
             this.p_panel.Size = new System.Drawing.Size(240, 107);
             this.p_panel.TabIndex = 40;
+            this.p_panel.Visible = false;
             this.p_panel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel17_Paint);
             // 
             // panel11
@@ -627,6 +628,31 @@
             this.pay_panel.Size = new System.Drawing.Size(240, 145);
             this.pay_panel.TabIndex = 36;
             this.pay_panel.Visible = false;
+            // 
+            // panel19
+            // 
+            this.panel19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.panel19.Location = new System.Drawing.Point(44, 8);
+            this.panel19.Name = "panel19";
+            this.panel19.Size = new System.Drawing.Size(5, 28);
+            this.panel19.TabIndex = 25;
+            // 
+            // appoienment
+            // 
+            this.appoienment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.appoienment.FlatAppearance.BorderSize = 0;
+            this.appoienment.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.appoienment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.appoienment.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.appoienment.ForeColor = System.Drawing.Color.White;
+            this.appoienment.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.appoienment.Location = new System.Drawing.Point(47, 8);
+            this.appoienment.Name = "appoienment";
+            this.appoienment.Size = new System.Drawing.Size(193, 28);
+            this.appoienment.TabIndex = 20;
+            this.appoienment.Text = "Appoientment";
+            this.appoienment.UseVisualStyleBackColor = false;
+            this.appoienment.Click += new System.EventHandler(this.appoienment_Click);
             // 
             // panel24
             // 
@@ -832,6 +858,16 @@
             this.panelLogo.Size = new System.Drawing.Size(240, 174);
             this.panelLogo.TabIndex = 0;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(-56, -33);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(363, 268);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // panelChildForm
             // 
             this.panelChildForm.BackColor = System.Drawing.Color.White;
@@ -848,41 +884,29 @@
             this.panelChildForm.Size = new System.Drawing.Size(987, 719);
             this.panelChildForm.TabIndex = 4;
             // 
-            // pictureBox1
+            // total_lbl
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-56, -33);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(363, 268);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.total_lbl.AutoSize = true;
+            this.total_lbl.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.total_lbl.Font = new System.Drawing.Font("Palatino Linotype", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.total_lbl.ForeColor = System.Drawing.Color.White;
+            this.total_lbl.Location = new System.Drawing.Point(84, 97);
+            this.total_lbl.Name = "total_lbl";
+            this.total_lbl.Size = new System.Drawing.Size(26, 21);
+            this.total_lbl.TabIndex = 34;
+            this.total_lbl.Text = "00";
             // 
-            // chart1
+            // label1
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chart1.Legends.Add(legend2);
-            this.chart1.Location = new System.Drawing.Point(263, 0);
-            this.chart1.Name = "chart1";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chart1.Series.Add(series2);
-            this.chart1.Size = new System.Drawing.Size(437, 220);
-            this.chart1.TabIndex = 0;
-            this.chart1.Text = "chart1";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(29, 161);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(925, 567);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(35, 50);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(213, 26);
+            this.label1.TabIndex = 34;
+            this.label1.Text = "Total Income Today";
             // 
             // ADD_Appoientment
             // 
@@ -943,30 +967,6 @@
             this.ADD_Appoientment.TabIndex = 33;
             this.ADD_Appoientment.Values.Text = "";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(35, 50);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(213, 26);
-            this.label1.TabIndex = 34;
-            this.label1.Text = "Total Income Today";
-            // 
-            // total_lbl
-            // 
-            this.total_lbl.AutoSize = true;
-            this.total_lbl.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.total_lbl.Font = new System.Drawing.Font("Palatino Linotype", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.total_lbl.ForeColor = System.Drawing.Color.White;
-            this.total_lbl.Location = new System.Drawing.Point(84, 97);
-            this.total_lbl.Name = "total_lbl";
-            this.total_lbl.Size = new System.Drawing.Size(26, 21);
-            this.total_lbl.TabIndex = 34;
-            this.total_lbl.Text = "00";
-            // 
             // chart2
             // 
             chartArea1.Name = "ChartArea1";
@@ -983,30 +983,31 @@
             this.chart2.TabIndex = 35;
             this.chart2.Text = "chart2";
             // 
-            // appoienment
+            // pictureBox2
             // 
-            this.appoienment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.appoienment.FlatAppearance.BorderSize = 0;
-            this.appoienment.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.appoienment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.appoienment.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.appoienment.ForeColor = System.Drawing.Color.White;
-            this.appoienment.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.appoienment.Location = new System.Drawing.Point(47, 8);
-            this.appoienment.Name = "appoienment";
-            this.appoienment.Size = new System.Drawing.Size(193, 28);
-            this.appoienment.TabIndex = 20;
-            this.appoienment.Text = "Appoientment";
-            this.appoienment.UseVisualStyleBackColor = false;
-            this.appoienment.Click += new System.EventHandler(this.appoienment_Click);
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(29, 161);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(925, 567);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 2;
+            this.pictureBox2.TabStop = false;
             // 
-            // panel19
+            // chart1
             // 
-            this.panel19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.panel19.Location = new System.Drawing.Point(44, 8);
-            this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(5, 28);
-            this.panel19.TabIndex = 25;
+            chartArea2.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart1.Legends.Add(legend2);
+            this.chart1.Location = new System.Drawing.Point(263, 0);
+            this.chart1.Name = "chart1";
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chart1.Series.Add(series2);
+            this.chart1.Size = new System.Drawing.Size(437, 220);
+            this.chart1.TabIndex = 0;
+            this.chart1.Text = "chart1";
             // 
             // main_page
             // 
@@ -1033,12 +1034,12 @@
             this.pay_panel.ResumeLayout(false);
             this.ItemPanel.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelChildForm.ResumeLayout(false);
             this.panelChildForm.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
 
         }

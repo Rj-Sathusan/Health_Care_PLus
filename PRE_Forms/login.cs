@@ -52,15 +52,6 @@ namespace Health_Care
                 return false;
             }
 
-            //// Validate name
-            //if (string.IsNullOrWhiteSpace(pass_txt.Text) || !Regex.IsMatch(pass_txt.Text, "^[a-zA-Z]+$"))
-            //{
-            //    MessageBox.Show("Please enter your name. Only letters are allowed.", "Invalid Name");
-            //    pass_txt.Focus();
-            //    return false;
-            //}
-
-          
             return true;
         }
 
@@ -80,8 +71,21 @@ namespace Health_Care
                     {
                         // The 'role' variable now contains the user's role.
                         MessageBox.Show("Welcome \n Role : " + role);
+                        medicalrecords doctor_form = new medicalrecords();
+                        phramecy_medicalrecords phrmacy_form = new phramecy_medicalrecords();
                         main_page main_page = new main_page(role);
-                        main_page.Show();
+                        staff_details_for_staffs for_staff = new staff_details_for_staffs();
+
+                       // staff_details staff_form = staff_details();
+                        if (role == "Admin")
+                            main_page.Show();
+                        else if (role == "Doctor")
+                            doctor_form.Show();
+                        else
+                            for_staff.Show();
+                        
+                       // main_page.Show();
+                        this.Hide();
                     }
                     else
                     {

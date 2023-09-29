@@ -29,12 +29,15 @@ namespace Health_Care
         public void privileged(string Role)
         {
             role = Role;
-            if (role == "Doctor")
+            if (role != "Admin")
             {
                 pay_btn.Hide();
                 resorce_btn.Hide();
-
-                d_btn.Hide();
+                if (role != "Doctor")
+                {
+                    d_btn.Hide();
+                    //patient_btn.Hide();
+                }
             }
         }
 
@@ -59,16 +62,19 @@ namespace Health_Care
             // Initialize the _pay object
             _pay = new BE_Classes.payment();
             DataTable amountTable = _pay.total_amount();
-
-            if (amountTable.Rows.Count > 0)
+            try
             {
-                decimal totalAmount = Convert.ToDecimal(amountTable.Rows[0]["TotalAmount"]);
-                total_lbl.Text = "Rs." + totalAmount.ToString("0.00");
+                if (amountTable.Rows.Count > 0)
+                {
+                    decimal totalAmount = Convert.ToDecimal(amountTable.Rows[0]["TotalAmount"]);
+                    total_lbl.Text = "Rs." + totalAmount.ToString("0.00");
+                }
+                else
+                {
+                    label1.Text = "Rs.00";
+                }
             }
-            else
-            {
-                label1.Text = "Rs.00";
-            }
+            catch {  }
         }
 
         private void kryptonButton1_Click(object sender, EventArgs e)

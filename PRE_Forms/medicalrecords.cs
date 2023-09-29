@@ -7,6 +7,8 @@ namespace Health_Care
     public partial class medicalrecords : KryptonForm
     {
         private int _recordID;
+        DAL.function_ dalFunction = new DAL.function_();
+
         private BE_Classes.MedicalRecords _medicalRecordsClass;
         private BE_Classes.patient_details _patient_details;
 
@@ -77,15 +79,8 @@ namespace Health_Care
         // Handle search box text change event
         private void search_box_TextChanged(object sender, EventArgs e)
         {
-            try
-            {
-                string searchText = search_box.Text;
-                _medicalRecordsClass.SearchRecordsByPatientID(grid_view, searchText);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("An error occurred: " + ex.Message, "Error");
-            }
+            dalFunction.SearchGridView(grid_view, search_box.Text);
+
         }
 
         // Handle clear button click event
@@ -173,9 +168,9 @@ namespace Health_Care
                 // Populate text boxes for editing based on selected row
                 patientID_txt.Text = grid_view.Rows[e.RowIndex].Cells[1].Value.ToString();
                 name_txt.Text = grid_view.Rows[e.RowIndex].Cells[2].Value.ToString();
-                diagnosis_txt.Text = grid_view.Rows[e.RowIndex].Cells[3].Value.ToString();
-                prescription_txt.Text = grid_view.Rows[e.RowIndex].Cells[4].Value.ToString();
-                labResults_txt.Text = grid_view.Rows[e.RowIndex].Cells[5].Value.ToString();
+                diagnosis_txt.Text = grid_view.Rows[e.RowIndex].Cells[4].Value.ToString();
+                prescription_txt.Text = grid_view.Rows[e.RowIndex].Cells[5].Value.ToString();
+                labResults_txt.Text = grid_view.Rows[e.RowIndex].Cells[6].Value.ToString();
                 _recordID = Convert.ToInt32(grid_view.Rows[e.RowIndex].Cells[0].Value.ToString());
 
                 save_btn.Text = "Edit";
@@ -188,12 +183,14 @@ namespace Health_Care
 
         private void patientID_txt_TextChanged(object sender, EventArgs e)
         {
+            dalFunction.SearchGridView(grid_view2, patient_nic_txt.Text);
 
         }
 
         private void grid_view2_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-
+            patientID_txt.Text = grid_view2.Rows[e.RowIndex].Cells[0].Value.ToString();
+            name_txt.Text = grid_view2.Rows[e.RowIndex].Cells[1].Value.ToString();
         }
     }
 }
