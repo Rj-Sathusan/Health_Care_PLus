@@ -8,7 +8,7 @@
 
 ## Project Overview
 
-HealthCare Plus is a comprehensive Healthcare Management System designed to streamline and enhance healthcare services. This project aims to bring innovation and technology to healthcare, ensuring the highest standards of patient care and comfort.</b>
+HealthCare Plus is a comprehensive Healthcare Management System designed to streamline and enhance healthcare services. This project aims to bring innovation and technology to healthcare, ensuring the highest standards of patient care and comfort.<br>
 <img src="Resource/ss04.png" alt="Project Banner" align="center">
 
 The system offers the following features:
